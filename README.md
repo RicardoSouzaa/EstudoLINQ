@@ -107,5 +107,5 @@ manipulação de seus dados.
 
 ---
 
-Livro utilizado para estudar:
-[Livro C# para iniciante, Gratuíto](https://livrocsharp.com.br/wp-content/uploads/dae-uploads/CSharpIniciantes.pdf, "Livro c#"){:target="_blank"}
+Material utilizado para estudar:
+<br><a href="https://livrocsharp.com.br/wp-content/uploads/dae-uploads/CSharpIniciantes.pdf" target="_blank">Livro C# para iniciante, Gratuíto</a>
