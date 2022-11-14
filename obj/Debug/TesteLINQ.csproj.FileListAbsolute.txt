@@ -1,0 +1,7 @@
+D:\Dev\Ricardo\Testes\TesteLINQ\bin\Debug\TesteLINQ.exe.config
+D:\Dev\Ricardo\Testes\TesteLINQ\bin\Debug\TesteLINQ.exe
+D:\Dev\Ricardo\Testes\TesteLINQ\bin\Debug\TesteLINQ.pdb
+D:\Dev\Ricardo\Testes\TesteLINQ\obj\Debug\TesteLINQ.csproj.AssemblyReference.cache
+D:\Dev\Ricardo\Testes\TesteLINQ\obj\Debug\TesteLINQ.csproj.CoreCompileInputs.cache
+D:\Dev\Ricardo\Testes\TesteLINQ\obj\Debug\TesteLINQ.exe
+D:\Dev\Ricardo\Testes\TesteLINQ\obj\Debug\TesteLINQ.pdb
