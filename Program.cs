@@ -13,6 +13,36 @@ namespace TesteLINQ
         {
             var numeros = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+            Dictionary<string, string> ListaEstado = new Dictionary<string, string>
+            {
+                { "Paraná", "Brasil" },
+                { "Bahia", "Brasil" },
+                { "Mato Grosso", "Brasil" },
+                { "Catamarca", "Argentina" },
+                { "Córdova", "Argentina" },
+                { "La Pampa", "Argentina" },
+                { "Dahuk", "Iraque" },
+                { "Suleimânia", "Iraque" },
+                { "Saladino", "Iraque" },
+            };
+
+            List<string> nomes = new List<string>
+            {
+                "Ricardo Souza",
+                "Maria Antonieta",
+                "Jessica Jonnes Lindona",
+                "Pedro Alvares de Alencar Cabral"
+            };
+
+            var pessoas = new[]
+            {
+                "Carlos Alberto",
+                "Maria do Carmo",
+                "Maria Antonieta",
+                "Hilda Furacão",
+                "Bino o Caminhoneiro"
+            };
+
             #region Método IEnumerable
 
             ////funcao de filtro que recebe um numero e retorna o que for filtrado
@@ -56,14 +86,6 @@ namespace TesteLINQ
             //}
 
             //// Exemplo para filtrar uma lista de nomes.
-            //var pessoas = new[]
-            //{
-            //    "Carlos Alberto",
-            //    "Maria do Carmo",
-            //    "Maria Antonieta",
-            //    "Hilda Furacão",
-            //    "Bino o Caminhoneiro"
-            //};
 
             ////filtro
             //var pessoasFiltradas = pessoas.Where(p => p.Contains("Maria"));
@@ -219,6 +241,36 @@ namespace TesteLINQ
             //}
 
             #endregion Select
+
+            #region GROUP
+
+            ////filtro lista de estado pelo Pais
+            //var resultado = ListaEstado.GroupBy(e => e.Value);
+
+            //foreach (var pais in resultado)
+            //{
+            //    //pega os países da lista
+            //    Console.WriteLine($"[] {pais.Key}");
+
+            //    //pega os estados de cada país
+            //    foreach (var estado in pais)
+            //    {
+            //        Console.WriteLine($"          - {estado.Key}");
+            //    }
+            //}
+
+            #endregion GROUP
+
+            #region Agregate
+
+            //var resultado = nomes.Aggregate((maior, proximo) =>
+            //{
+            //    return maior.Length > proximo.Length ? maior : proximo;
+            //});
+
+            //Console.WriteLine($"{resultado} é o maior nome da lista");
+
+            #endregion Agregate
 
             Console.ReadLine();
         }
