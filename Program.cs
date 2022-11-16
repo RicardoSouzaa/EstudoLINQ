@@ -272,6 +272,29 @@ namespace TesteLINQ
 
             #endregion Agregate
 
+            #region Cast
+
+            string nome = "Maria";
+            // pesquisa se tem alguma pessoa com o nome
+            if (pessoas.Cast<string>().Any(p => p.Contains(nome)))
+            {
+                //retorna a quantidade de pessoas com esse nome
+                Console.WriteLine($"Sua pesquisa contém {pessoas.Count(p => p.Contains(nome))} pessoas chamadas {nome}\n");
+
+                // mostra todos os nomes específico que existem na lista
+                var pessoasFiltradas = pessoas.Where(p => p.Contains("Maria"));
+                foreach (var pessoa in pessoasFiltradas)
+                {
+                    Console.WriteLine($"\t\t{pessoa}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"O nome {nome} não foi encontrado!\n");
+            }
+
+            #endregion Cast
+
             Console.ReadLine();
         }
     }
